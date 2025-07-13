@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/IMessageTransmitter.sol": "IMessageTransmitter"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IMessageTransmitter.sol": {
+			"keccak256": "0xf63642654c7b5649b463e774e80e48825d4568735eaa1e4c79901e97b4affa71",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f83f3fe3c6c36fc20cdfabb7bee1b202855df265ecf3d4022efb4372df628e8",
+				"dweb:/ipfs/QmPs3FUkVNVU33ZWcBak5Ymy5WXozPz4dwWMcHbvxYncnG"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint32",
+						"name": "destinationDomain",
+						"type": "uint32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "mintRecipient",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "burnToken",
+						"type": "address"
+					}
+				],
+				"name": "depositForBurn",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "nonce",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/USDCSender.sol": "ITokenMessenger"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IMessageTransmitter.sol": {
+			"keccak256": "0xf63642654c7b5649b463e774e80e48825d4568735eaa1e4c79901e97b4affa71",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f83f3fe3c6c36fc20cdfabb7bee1b202855df265ecf3d4022efb4372df628e8",
+				"dweb:/ipfs/QmPs3FUkVNVU33ZWcBak5Ymy5WXozPz4dwWMcHbvxYncnG"
+			]
+		},
+		"contracts/USDCSender.sol": {
+			"keccak256": "0x975951a241c5a4cb39330ba0d75b8cab00bc084cca056f4280d66d265093533a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b81866b917b830bf699a2f419ac03b4f567fe15fcb434e3c47617bcec062efc7",
+				"dweb:/ipfs/QmbMQ1mVDgy9uQUeqdePkkup325vDU3k5JKyuH71qKVmr7"
+			]
+		}
+	},
+	"version": 1
+}

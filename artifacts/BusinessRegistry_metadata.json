@@ -1,0 +1,197 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_swnsRegistrarAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "businessName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "swName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "vaultAddress",
+						"type": "address"
+					}
+				],
+				"name": "BusinessRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "businessToOwnerName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "businessToVault",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "swName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "businessName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "vaultAddress",
+						"type": "address"
+					}
+				],
+				"name": "registerBusiness",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "businessName",
+						"type": "string"
+					}
+				],
+				"name": "resolveBusiness",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "swnsRegistrar",
+				"outputs": [
+					{
+						"internalType": "contract ISWNSRegistrar",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"params": {
+						"_swnsRegistrarAddress": "Alamat dari kontrak SWNSRegistrar yang sudah live."
+					}
+				},
+				"registerBusiness(string,string,address)": {
+					"params": {
+						"businessName": "Nama bisnis yang ingin didaftarkan (misal: \"Toko Jaya\").",
+						"swName": "Nama .sw milik pengguna (misal: \"budi\").",
+						"vaultAddress": "Alamat dari BusinessVault yang sudah dibuat."
+					}
+				}
+			},
+			"title": "BusinessRegistry",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"registerBusiness(string,string,address)": {
+					"notice": "Mendaftarkan sebuah nama bisnis baru."
+				},
+				"resolveBusiness(string)": {
+					"notice": "Me-resolve nama bisnis menjadi alamat BusinessVault-nya."
+				}
+			},
+			"notice": "Kontrak ini mengelola pendaftaran nama bisnis dan menautkannya ke BusinessVault serta identitas personal .sw pemiliknya.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BusinessRegistry.sol": "BusinessRegistry"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BusinessRegistry.sol": {
+			"keccak256": "0x21ee6007463c6ff29d17c3262269de7708906040a56cee0174d0a36f15d07306",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d6f7444cb6a345933c4ff3ba5c370c3906255ec38bd5146ed8447870a1bf6f4",
+				"dweb:/ipfs/QmNWYFYdxB1fYUkxojcgdwKH4gXLDA37JVAgQSVwLFqCTC"
+			]
+		}
+	},
+	"version": 1
+}

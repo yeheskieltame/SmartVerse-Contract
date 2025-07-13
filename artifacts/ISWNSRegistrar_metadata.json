@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "resolve",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BusinessRegistry.sol": "ISWNSRegistrar"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BusinessRegistry.sol": {
+			"keccak256": "0x21ee6007463c6ff29d17c3262269de7708906040a56cee0174d0a36f15d07306",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d6f7444cb6a345933c4ff3ba5c370c3906255ec38bd5146ed8447870a1bf6f4",
+				"dweb:/ipfs/QmNWYFYdxB1fYUkxojcgdwKH4gXLDA37JVAgQSVwLFqCTC"
+			]
+		}
+	},
+	"version": 1
+}
